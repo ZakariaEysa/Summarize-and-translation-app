@@ -21,7 +21,6 @@ class _testState extends State<test> {
   }
 
   Future _locatefile() async {
-    print("eeeeeeeeeeeeeeeeh");
 
     FilePickerResult? result =
         await FilePicker.platform.pickFiles(type: FileType.any);
@@ -41,7 +40,6 @@ class _testState extends State<test> {
     return GestureDetector(
       onTap: () async {
         File file = await _locatefile();
-        print("aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa");
         print("file path ${file.path}");
       },
       child: Center(
