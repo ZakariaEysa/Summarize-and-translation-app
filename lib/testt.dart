@@ -2,17 +2,9 @@ import 'dart:io';
 
 import 'package:flutter/material.dart';
 import 'package:file_picker/file_picker.dart';
-import 'package:permission_handler/permission_handler.dart';
 
 class test extends StatefulWidget {
-  Future<void> requestStoragePermission() async {
-    final status = await Permission.storage.request();
-    if (status == PermissionStatus.granted) {
-      print("Permission granted");
-    } else {
-      print("Permission denied");
-    }
-  }
+
 
   const test({super.key});
 
@@ -26,7 +18,6 @@ class _testState extends State<test> {
     // TODO: implement initState
     super.initState();
 
-    // test().requestStoragePermission();
   }
 
   Future _locatefile() async {
@@ -55,10 +46,10 @@ class _testState extends State<test> {
       },
       child: Center(
         child: Container(
-          child: Text(
+          child: const Text(
             textAlign: TextAlign.center,
             "press me ",
-            style: TextStyle(fontSize: 20),
+            style: const TextStyle(fontSize: 20),
           ),
           width: 100,
           height: 50,
