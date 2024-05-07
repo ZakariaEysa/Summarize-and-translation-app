@@ -1,7 +1,13 @@
-
 import 'package:flutter/material.dart';
+
 import 'package:summarize_and_translation_app/table/ceate_table.dart';
 import 'package:summarize_and_translation_app/testt.dart';
+
+import 'package:summarize_and_translation_app/home/layout/Screens/home_page.dart';
+
+import 'home/layout/Widgets/custom_buttom_sheet.dart';
+
+
 
 void main() {
   runApp(const MyApp());
@@ -26,8 +32,17 @@ class _MyAppState extends State<MyApp> {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
 
-        home: Scaffold(body: CreateTable()));
+    return  MaterialApp(debugShowCheckedModeBanner: false,home: Scaffold(
+
+      bottomSheet: CustomButtomSheet()
+      ,
+      appBar: AppBar(
+        backgroundColor: Colors.teal[100],
+        title: const Text("Summarize and Translation App",),),
+     // body: HomePage()
+     body :CreateTable()
+      ,backgroundColor: Colors.teal[400],));
+
   }
 }
