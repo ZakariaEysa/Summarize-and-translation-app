@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:summarize_and_translation_app/home/layout/Screens/Home_Page.dart';
-import 'package:summarize_and_translation_app/testt.dart';
+import 'package:summarize_and_translation_app/home/layout/Screens/home_page.dart';
+
+import 'home/layout/Widgets/custom_buttom_sheet.dart';
 
 
 void main() {
@@ -26,6 +27,13 @@ class _MyAppState extends State<MyApp> {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(home: Scaffold(body: Home_Page()));
+    return  MaterialApp(debugShowCheckedModeBanner: false,home: Scaffold(
+
+      bottomSheet: CustomButtomSheet()
+      ,
+      appBar: AppBar(
+        backgroundColor: Colors.teal[100],
+        title: const Text("Summarize and Translation App",),),
+      body: HomePage(),backgroundColor: Colors.teal[400],));
   }
 }

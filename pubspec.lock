@@ -341,6 +341,22 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "0.6.1"
+  top_snackbar:
+    dependency: "direct main"
+    description:
+      name: top_snackbar
+      sha256: "9f9b58ce272789ca91fbf2780dab7299ac5e789bd37be477242fadc8f3c34659"
+      url: "https://pub.dev"
+    source: hosted
+    version: "0.0.6"
+  top_snackbar_flutter:
+    dependency: "direct main"
+    description:
+      name: top_snackbar_flutter
+      sha256: "22d14664a13db6ac714934c3382bd8d4daa57fb888a672f922df71981c5a5cb2"
+      url: "https://pub.dev"
+    source: hosted
+    version: "3.1.0"
   vector_math:
     dependency: transitive
     description:
@@ -382,5 +398,5 @@ packages:
     source: hosted
     version: "1.0.4"
 sdks:
-  dart: ">=3.3.4 <4.0.0"
+  dart: ">=3.3.3 <4.0.0"
   flutter: ">=3.16.0"
