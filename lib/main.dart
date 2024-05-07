@@ -1,5 +1,6 @@
 
 import 'package:flutter/material.dart';
+import 'package:summarize_and_translation_app/table/ceate_table.dart';
 import 'package:summarize_and_translation_app/testt.dart';
 
 void main() {
@@ -25,6 +26,8 @@ class _MyAppState extends State<MyApp> {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(home: Scaffold(body: test()));
+    return const MaterialApp(
+
+        home: Scaffold(body: CreateTable()));
   }
 }
