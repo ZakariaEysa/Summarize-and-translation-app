@@ -1,8 +1,11 @@
-
 import 'package:flutter/material.dart';
+
 import 'package:summarize_and_translation_app/summaries/arabic_text_screen.dart';
 import 'package:summarize_and_translation_app/summaries/english_text_screen.dart';
 import 'package:summarize_and_translation_app/testt.dart';
+import 'package:summarize_and_translation_app/home/layout/Screens/home_page.dart';
+import 'home/layout/Widgets/custom_buttom_sheet.dart';
+
 
 void main() {
   runApp(const MyApp());
@@ -27,6 +30,7 @@ class _MyAppState extends State<MyApp> {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
+
     return  MaterialApp(
       debugShowCheckedModeBanner: false,
         routes: {
@@ -35,5 +39,7 @@ class _MyAppState extends State<MyApp> {
         },
         initialRoute: EnglishTextScreen.routeName ,
     );
+
+
   }
 }
